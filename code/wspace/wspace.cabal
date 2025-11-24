@@ -65,19 +65,8 @@ library
       bytestring
     default-language: Haskell2010
 
-executable vesting-exe
-    main-is:            Main.hs
-    hs-source-dirs:     tests
-    build-depends:
-        base >=4.14 && <4.15,
-        plutus-ledger-api,
-        plutus-tx,
-        wspace,
-        utilities
-    default-language:   Haskell2010
-    
-executable liquid-staking-exe
-    main-is:            Liquid-Staking.hs
+executable oraclepublisher-exe
+    main-is:          OraclePublisher.hs
     hs-source-dirs:     tests
     build-depends:
         base >=4.14 && <5,
